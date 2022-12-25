@@ -12,37 +12,272 @@
 grid-template-areas: 
 "header"
 "sidebar"
-"main"
-"anns"
-"trends";
+"main";
+
 }
 
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 500px){
   .container {
 grid-template-columns: 1fr;
 grid-template-areas: 
 "header"
 "sidebar"
-"main"
-"anns"
-"trends";
+"main";
+}
+
+.main {
+  width: fit-content;
+  height: fit-content;
+}
+#main-wrap {
+  flex-flow: column nowrap;
+  height:fit-content;
+}
+
+.project {
+  width: 15rem;
+}
+
+.project p {
+  font-size: 15px;
 }
 
 }
 
-@media only screen and (min-width: 700px) {
+
+
+@media (min-width: 1101px) {
   .container {
-grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+    
+    "sidebar header"
+    "sidebar main"
+    "sidebar main"
+    
+    
+    }
+    
+    
+    .main {
+    
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+     gap: 30px;
+    
+    
+    }
+    
+    #main-wrap {
+      grid-area: main;
+      background-color: #bccbde;
+      display: flex;
+      flex-flow: column wrap;
+    height: 100rem;
+      row-gap: 20px;
+      justify-content:stretch;
+    
+    }
+    
+    .main-title h3 {
+      color: black;
+      font-size: 25px;
+    }
+    
+    .project {
+      box-shadow: -5px -5px 3px  #ffe74c;
+      width: 13rem;
+      height: 40vh;
+      
+    }
+    
+    .main .project {
+      background-color:   #f2fbff;
+      color: black;
+      text-align: center;
+    border-radius: 5%;
+      
+    }
+    
+    .project .content {
+     margin: auto 0;
+    }
+    
+    .project p {
+      color: black;
+      font-weight: normal;
+      font-size: 17px;
+      padding: 5px;
+    
+    }
+    
+    .project .title {
+      font-size: 25px;
+      text-align: center;
+    }
+    
+    .announcements {
+      grid-area: anns;
+    width: 12rem;
+     background-color:   #f2fbff;
+     color: black;
+     text-align: center;
+    border-radius: 5%;
+    box-shadow: 2px 2px 3px grey;
+    
+    }
+    
+    .announcements p.ann-title {
+      font-size: 10px;
+      font-weight: 700;
+     
+    }
+    
+    .announcements p {
+      color: black;
+      font-weight: normal;
+      font-size: 14px;
+      padding: 3px;
+    }
+    
+    .trending {
+      grid-area: trends;
+     width: 12rem;
+      background-color:   #f2fbff;
+      color: black;
+      text-align: center;
+    border-radius: 5%;
+    box-shadow: 2px 2px 3px grey;
+    align-self: stretch;
+    }
+    
+    .trending p {
+      color: black;
+      font-weight: normal;
+      font-size: 14px;
+      padding: 3px;
+    
+    
+    }
+    
+}
+
+@media (min-width: 700px) and (max-width: 1100px) {
+  .container {
+grid-template-columns: 1fr 3fr;
 grid-template-areas: 
 
-"sidebar header header"
-"sidebar main anns"
-"sidebar main anns"
-"sidebar main trends";
+"sidebar header"
+"sidebar main"
+"sidebar main"
+
 
 }
 
+
+.main {
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+ gap: 30px;
+
+
+}
+
+#main-wrap {
+  grid-area: main;
+  background-color: #bccbde;
+  display: flex;
+  flex-flow: column nowrap;
+
+  row-gap: 20px;
+  
+
+}
+
+.main-title h3 {
+  color: black;
+  font-size: 25px;
+}
+
+.project {
+  box-shadow: -5px -5px 3px  #ffe74c;
+  width: 70%;
+  height: 20vh;
+  
+}
+
+.main .project {
+  background-color:   #f2fbff;
+  color: black;
+  text-align: center;
+border-radius: 5%;
+  
+}
+
+.project .content {
+ margin: auto 0;
+}
+
+.project p {
+  color: black;
+  font-weight: normal;
+  font-size: 17px;
+  padding: 5px;
+
+}
+
+.project .title {
+  font-size: 25px;
+  text-align: center;
+}
+
+.announcements {
+  grid-area: anns;
+width: 70%;
+ background-color:   #f2fbff;
+ color: black;
+ text-align: center;
+border-radius: 5%;
+box-shadow: 2px 2px 3px grey;
+
+}
+
+.announcements p.ann-title {
+  font-size: 10px;
+  font-weight: 700;
+ 
+}
+
+.announcements p {
+  color: black;
+  font-weight: normal;
+  font-size: 14px;
+  padding: 3px;
+}
+
+.trending {
+  grid-area: trends;
+ width: 70%;
+  background-color:   #f2fbff;
+  color: black;
+  text-align: center;
+border-radius: 5%;
+box-shadow: 2px 2px 3px grey;
+align-self: stretch;
+}
+
+.trending p {
+  color: black;
+  font-weight: normal;
+  font-size: 14px;
+  padding: 3px;
+
+
+}
 
 }
 
@@ -107,72 +342,350 @@ margin: 20vh 0 0;
 height: 20px;
 }
 
-
-
-.main {
-  background-color: #bccbde;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
- grid-area: main;
- gap: 10px;
-
-
+@media (min-width: 1400px) {
+  .container {
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+    
+    "sidebar header"
+    "sidebar main"
+    "sidebar main"
+    
+    
+    }
+    
+    
+    .main {
+    
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+     gap: 30px;
+    
+    
+    }
+    
+    #main-wrap {
+      grid-area: main;
+      background-color: #bccbde;
+      display: flex;
+      flex-flow: column wrap;
+    height: 100rem;
+      row-gap: 20px;
+      justify-content:stretch;
+    
+    }
+    
+    .main-title h3 {
+      color: black;
+      font-size: 25px;
+    }
+    
+    .project {
+      box-shadow: -5px -5px 3px  #ffe74c;
+      width: 20rem;
+      height: 40vh;
+      
+    }
+    
+    .main .project {
+      background-color:   #f2fbff;
+      color: black;
+      text-align: center;
+    border-radius: 5%;
+      
+    }
+    
+    .project .content {
+     margin: auto 0;
+    }
+    
+    .project p {
+      color: black;
+      font-weight: normal;
+      font-size: 25px;
+      padding: 5px;
+    
+    }
+    
+    .project .title {
+      font-size: 30px;
+      text-align: center;
+    }
+    
+    .announcements {
+      grid-area: anns;
+    width: 15rem;
+     background-color:   #f2fbff;
+     color: black;
+     text-align: center;
+    border-radius: 5%;
+    box-shadow: 2px 2px 3px grey;
+    
+    }
+    
+    .announcements p.ann-title {
+      font-size: 15px;
+      font-weight: 700;
+     
+    }
+    
+    .announcements p {
+      color: black;
+      font-weight: normal;
+      font-size: 14px;
+      padding: 3px;
+    }
+    
+    .trending {
+      grid-area: trends;
+     width: 15rem;
+      background-color:   #f2fbff;
+      color: black;
+      text-align: center;
+    border-radius: 5%;
+    box-shadow: 2px 2px 3px grey;
+    align-self: stretch;
+    }
+    
+    .trending p {
+      color: black;
+      font-weight: normal;
+      font-size: 18px;
+      padding: 3px;
+    
+    
+    }
 }
 
+@media (min-width: 1800px) {
+  .container {
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+    
+    "sidebar header"
+    "sidebar main"
+    "sidebar main"
+    
+    
+    }
+    
+    
+    .main {
+    
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+     gap: 50px;
+    
+    
+    }
+    
+    #main-wrap {
+      grid-area: main;
+      background-color: #bccbde;
+      display: flex;
+      flex-flow: column wrap;
+    height: 100rem;
+      row-gap: 20px;
+      justify-content:stretch;
+    
+    }
+    
+    .main-title h3 {
+      color: black;
+      font-size: 25px;
+    }
+    
+    .project {
+      box-shadow: -5px -5px 3px  #ffe74c;
+      width: 25rem;
+      height: 340h;
+      
+    }
+    
+    .main .project {
+      background-color:   #f2fbff;
+      color: black;
+      text-align: center;
+    border-radius: 5%;
+      
+    }
+    
+    .project .content {
+     margin: auto 0;
+    }
+    
+    .project p {
+      color: black;
+      font-weight: normal;
+      font-size: 28px;
+      padding: 5px;
+    
+    }
+    
+    .project .title {
+      font-size: 30px;
+      text-align: center;
+    }
+    
+    .announcements {
+      grid-area: anns;
+    width: 15rem;
+     background-color:   #f2fbff;
+     color: black;
+     text-align: center;
+    border-radius: 5%;
+    box-shadow: 2px 2px 3px grey;
+    
+    }
+    
+    .announcements p.ann-title {
+      font-size: 25px;
+      font-weight: 700;
+     
+    }
+    
+    .announcements p {
+      color: black;
+      font-weight: normal;
+      font-size: 20px;
+      padding: 3px;
+    }
+    
+    .trending {
+      grid-area: trends;
+     width: 20rem;
+      background-color:   #f2fbff;
+      color: black;
+      text-align: center;
+    border-radius: 5%;
+    box-shadow: 2px 2px 3px grey;
+    align-self: stretch;
+    }
+    
+    .trending p {
+      color: black;
+      font-weight: normal;
+      font-size: 20px;
+      padding: 3px;
+    
+    
+    }
+  }
 
-.main .project {
-  background-color: #FFFFFF;
-  color: black;
-  text-align: center;
-  border: black solid 2px;
-  
-}
-
-.project .content {
- margin: auto 0;
-}
-
-.project p {
-  color: black;
-  font-weight: normal;
-  font-size: 20px;
-  padding: 5px;
-
-}
-
-.project .title {
-  font-size: 25px;
-  text-align: center;
-}
-
-.announcements {
-  grid-area: anns;
-}
-
-.announcements p.ann-title {
-  font-size: 10px;
-  font-weight: 700;
- 
-}
-
-.announcements p {
-  color: black;
-  font-weight: normal;
-  font-size: 14px;
-  padding: 3px;
-}
-
-.trending {
-  grid-area: trends;
-}
-
-.trending > div {
-  background-color: #FFFFFF;
-  color: black;
-  text-align: center;
-  font-size: 10px;
-  height: 100px;
-  width: 120px;
-
-}
+  @media (min-width: 2300px) {
+    .container {
+      grid-template-columns: 1fr 3fr;
+      grid-template-areas: 
+      
+      "sidebar header"
+      "sidebar main"
+      "sidebar main"
+      
+      
+      }
+      
+      
+      .main {
+      
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+       gap: 60px;
+      
+      
+      }
+      
+      #main-wrap {
+        grid-area: main;
+        background-color: #bccbde;
+        display: flex;
+        flex-flow: column wrap;
+      height: 170rem;
+        row-gap: 20px;
+        justify-content:stretch;
+      
+      }
+      
+      .main-title h3 {
+        color: black;
+        font-size: 25px;
+      }
+      
+      .project {
+        box-shadow: -5px -5px 3px  #ffe74c;
+        width: 32rem;
+        height: 40vh;
+        
+      }
+      
+      .main .project {
+        background-color:   #f2fbff;
+        color: black;
+        text-align: center;
+      border-radius: 5%;
+        
+      }
+      
+      .project .content {
+       margin: auto 0;
+      }
+      
+      .project p {
+        color: black;
+        font-weight: normal;
+        font-size: 28px;
+        padding: 5px;
+      
+      }
+      
+      .project .title {
+        font-size: 30px;
+        text-align: center;
+      }
+      
+      .announcements {
+        grid-area: anns;
+      width: 22rem;
+       background-color:   #f2fbff;
+       color: black;
+       text-align: center;
+      border-radius: 5%;
+      box-shadow: 2px 2px 3px grey;
+      
+      }
+      
+      .announcements p.ann-title {
+        font-size: 25px;
+        font-weight: 700;
+       
+      }
+      
+      .announcements p {
+        color: black;
+        font-weight: normal;
+        font-size: 20px;
+        padding: 3px;
+      }
+      
+      .trending {
+        grid-area: trends;
+       width: 22rem;
+        background-color:   #f2fbff;
+        color: black;
+        text-align: center;
+      border-radius: 5%;
+      box-shadow: 2px 2px 3px grey;
+      align-self: stretch;
+      }
+      
+      .trending p {
+        color: black;
+        font-weight: normal;
+        font-size: 20px;
+        padding: 3px;
+      
+      
+      }
+    }
