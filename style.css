@@ -3,18 +3,27 @@
   padding: 0;
 }
 
+.content p.title {
+  color:  #4b6eff;
+  text-shadow: 1px 1px 2px black;
+font-weight: 700;
+}
 
-
+.icons span {
+  color:   #ffa952;
+  text-shadow: 1px 1px 1px black;
+ padding: 5px;
+}
 .container {
   text-align: center;
-  display: grid;
-  grid-template-columns: 1fr;
-grid-template-areas: 
-"header"
-"sidebar"
-"main";
 
 }
+.icons {
+  margin: 0 0 1rem;
+  display: flex;
+  justify-content: right;
+}
+
 
 
 @media only screen and (min-width: 350px){
@@ -25,6 +34,15 @@ grid-template-areas:
 "header"
 "sidebar"
 "main";
+}
+
+.icons {
+  margin: -2.7rem 0 -2rem;
+}
+
+.project .content img {
+    
+  height: 17vh;
 }
 
 .main {
@@ -40,6 +58,7 @@ grid-template-areas:
   background-color: #bccbde;
   flex-flow: column nowrap;
   grid-area: main;
+  align-items: center;
 
 }
 .main-title h3 {
@@ -48,9 +67,9 @@ grid-template-areas:
 }
 
 .project {
-  box-shadow: -5px -5px 3px  #ffe74c;
-width: 80%;
-height: 30vh;
+  box-shadow: -5px -5px 3px   #4b6eff;
+width: 20rem;
+height: 25vh;
   
   
 }
@@ -142,8 +161,15 @@ box-shadow: 2px 2px 3px grey;
     
     
     }
+
+    .icons {
+      margin: -2rem 0 -2rem;
+    }
     
+    .project .content img {
     
+      height: 30vh;
+    }
     .main {
     
       display: grid;
@@ -161,7 +187,7 @@ box-shadow: 2px 2px 3px grey;
       flex-flow: column wrap;
     height: 100rem;
       row-gap: 20px;
-      justify-content:stretch;
+   
     
     }
     
@@ -171,9 +197,9 @@ box-shadow: 2px 2px 3px grey;
     }
     
     .project {
-      box-shadow: -5px -5px 3px  #ffe74c;
-      width: 13rem;
-      height: 40vh;
+      box-shadow: -5px -5px 3px   #4b6eff;
+      width: 17rem;
+      height: 42vh;
       
     }
     
@@ -259,6 +285,15 @@ grid-template-areas:
 
 
 }
+.icons {
+  margin: -2.6rem 0 -2rem;
+}
+
+
+.project .content img {
+    
+  height: 17vh;
+}
 
 
 .main {
@@ -276,7 +311,7 @@ grid-template-areas:
   background-color: #bccbde;
   display: flex;
   flex-flow: column nowrap;
-
+align-items: center;
   row-gap: 20px;
   
 
@@ -288,9 +323,9 @@ grid-template-areas:
 }
 
 .project {
-  box-shadow: -5px -5px 3px  #ffe74c;
-  width: 70%;
-  height: 20vh;
+  box-shadow: -5px -5px 3px   #4b6eff;
+  width: 25rem;
+  height: 25vh;
   
 }
 
@@ -437,7 +472,10 @@ height: 20px;
     
     
     }
+    .project .content img {
     
+      height: 30vh;
+    }
     
     .main {
     
@@ -466,7 +504,7 @@ height: 20px;
     }
     
     .project {
-      box-shadow: -5px -5px 3px  #ffe74c;
+      box-shadow: -5px -5px 3px  #4b6eff;
       width: 20rem;
       height: 50vh;
       
@@ -553,7 +591,10 @@ height: 20px;
     
     
     }
+    .project .content img {
     
+      height: 27vh;
+    }
     
     .main {
     
@@ -570,7 +611,7 @@ height: 20px;
       background-color: #bccbde;
       display: flex;
       flex-flow: column wrap;
-    height: 80rem;
+    height: 90rem;
       row-gap: 20px;
       justify-content:stretch;
     
@@ -582,9 +623,9 @@ height: 20px;
     }
     
     .project {
-      box-shadow: -5px -5px 3px  #ffe74c;
-      width: 22rem;
-      height: 34vh;
+      box-shadow: -5px -5px 3px   #4b6eff;
+      width: 24rem;
+      height: 40vh;
       
     }
     
@@ -597,19 +638,19 @@ height: 20px;
     }
     
     .project .content {
-     margin: auto 0;
+     margin: -2rem 0 0;
     }
     
     .project p {
       color: black;
       font-weight: normal;
-      font-size: 28px;
+      font-size: 20px;
       padding: 5px;
     
     }
     
     .project .title {
-      font-size: 30px;
+      font-size: 32px;
       text-align: center;
     }
     
@@ -669,7 +710,10 @@ height: 20px;
       
       
       }
-      
+      .project .content img {
+    
+        height: 26vh;
+      }
       
       .main {
       
@@ -698,7 +742,7 @@ height: 20px;
       }
       
       .project {
-        box-shadow: -5px -5px 3px  #ffe74c;
+        box-shadow: -5px -5px 3px   #4b6eff;
         width: 32rem;
         height: 40vh;
         
@@ -713,7 +757,7 @@ height: 20px;
       }
       
       .project .content {
-       margin: auto 0;
+       margin: 0 0;
       }
       
       .project p {
