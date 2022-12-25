@@ -17,8 +17,9 @@ grid-template-areas:
 }
 
 
-@media only screen and (min-width: 500px){
+@media only screen and (min-width: 350px){
   .container {
+    display: grid;
 grid-template-columns: 1fr;
 grid-template-areas: 
 "header"
@@ -27,21 +28,104 @@ grid-template-areas:
 }
 
 .main {
-  width: fit-content;
-  height: fit-content;
+    
+  display: grid;
+  grid-template-columns:  1fr;
+  grid-template-rows: repeat(3, 1fr);
+ gap: 30px;
+
 }
 #main-wrap {
+  display: flex;
+  background-color: #bccbde;
   flex-flow: column nowrap;
-  height:fit-content;
+  grid-area: main;
+
+}
+.main-title h3 {
+  color: black;
+  font-size: 25px;
 }
 
 .project {
-  width: 15rem;
+  box-shadow: -5px -5px 3px  #ffe74c;
+width: 80%;
+height: 30vh;
+  
+  
+}
+
+.main .project {
+  background-color:   #f2fbff;
+  color: black;
+  text-align: center;
+border-radius: 5%;
+  
+}
+
+.project .content {
+ margin: auto 0;
 }
 
 .project p {
-  font-size: 15px;
+  color: black;
+  font-weight: normal;
+  font-size: 17px;
+  padding: 5px;
+
 }
+
+.project .title {
+  font-size: 25px;
+  text-align: center;
+}
+
+.announcements {
+  grid-area: anns;
+  width: 80%;
+  height: 30vh;
+ background-color:   #f2fbff;
+ color: black;
+ text-align: center;
+border-radius: 5%;
+box-shadow: 2px 2px 3px grey;
+
+}
+
+.announcements p.ann-title {
+  font-size: 10px;
+  font-weight: 700;
+ 
+}
+
+.announcements p {
+  color: black;
+  font-weight: normal;
+  font-size: 14px;
+  padding: 3px;
+}
+
+.trending {
+  grid-area: trends;
+  width: 80%;
+  height: 30vh;
+  background-color:   #f2fbff;
+  color: black;
+  text-align: center;
+border-radius: 5%;
+box-shadow: 2px 2px 3px grey;
+
+}
+
+.trending p {
+  color: black;
+  font-weight: normal;
+  font-size: 14px;
+  padding: 3px;
+
+
+}
+
 
 }
 
@@ -370,7 +454,7 @@ height: 20px;
       background-color: #bccbde;
       display: flex;
       flex-flow: column wrap;
-    height: 100rem;
+    height: 117rem;
       row-gap: 20px;
       justify-content:stretch;
     
@@ -384,7 +468,7 @@ height: 20px;
     .project {
       box-shadow: -5px -5px 3px  #ffe74c;
       width: 20rem;
-      height: 40vh;
+      height: 50vh;
       
     }
     
@@ -486,7 +570,7 @@ height: 20px;
       background-color: #bccbde;
       display: flex;
       flex-flow: column wrap;
-    height: 100rem;
+    height: 80rem;
       row-gap: 20px;
       justify-content:stretch;
     
@@ -499,8 +583,8 @@ height: 20px;
     
     .project {
       box-shadow: -5px -5px 3px  #ffe74c;
-      width: 25rem;
-      height: 340h;
+      width: 22rem;
+      height: 34vh;
       
     }
     
@@ -689,3 +773,5 @@ height: 20px;
       
       }
     }
+
+    
