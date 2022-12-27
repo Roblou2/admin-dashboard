@@ -1,6 +1,8 @@
 let side = document.querySelector(".sidebar")
+let sideList = document.querySelector(".sidebar ul")
 let dash = document.querySelector(".mdi-view-dashboard")
-let sideList = document.querySelectorAll(".sidebar ul li span")
+let sideSpan = document.querySelectorAll(".sidebar ul li span")
+let listItems = document.querySelectorAll(".sidebar ul li")
 
 let x = window.matchMedia("(max-width: 700px)")
 
@@ -13,13 +15,16 @@ function myFunction() {
 
     if (x.matches) { 
         side.classList.toggle('invisible');
-        for (let i = 0; i < sideList.length; i++) {
-            sideList[i].textContent = ""
+sideList.setAttribute('style', 'flex-flow: row; justify-content: space-evenly; height: max-content;')
+
+
+        for (let i = 0; i < sideSpan.length; i++) {
+            sideSpan[i].textContent = ""
         }
+
       }
  
   }
   
 
   myFunction() 
-console.log(sideList)
