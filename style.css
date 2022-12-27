@@ -1,10 +1,44 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: Helvetica;
+
+ 
 }
+.container div {
+  padding: 22px 12px;
+}
+
+.sidebar-wrap {
+  background-color:  #425bf8;
+ grid-area: sidebar;
+
+}
+
+.sidebar-wrap h3 {
+  font-size: 30px;
+  color: white;
+}
+
+.invisible {
+  display: none;
+}
+
+body p  {
+  color: black;
+  font-size: calc(14px + (22 - 14) * ((100vw - 350px) / (3000 - 350))); 
+}
+
+body ul {
+  color: white;
+  font-weight: 700;
+  font-size: calc(30px + (45 - 30) * ((100vw - 350px) / (3000 - 350))); 
+}
+
 .content img {
   max-width: 100%;
 }
+
 .content p.title {
   color:  #4b6eff;
   text-shadow: 1px 1px 2px black;
@@ -16,6 +50,7 @@ font-weight: 700;
   text-shadow: 1px 1px 1px black;
  padding: 5px;
 }
+
 .container {
   text-align: center;
 
@@ -26,7 +61,33 @@ font-weight: 700;
   justify-content: right;
 }
 
+.announcements, .trending {
+  height: max-content;
+}
 
+.announcements div div {
+
+  border-bottom: 1px solid  #d4d4d4;
+
+};
+
+.announcements h3.ann-head {
+  color: black;
+  font-size: 20px;
+  margin-top: 16px;
+}
+
+.anns-wrapper p.ann-title {
+  color: black;
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+
+.trends-wrap p.trend-title {
+  color: black;
+  font-size: 25px;
+  margin-bottom: 8px;
+}
 
 @media only screen and (min-width: 350px){
   .container {
@@ -36,6 +97,24 @@ grid-template-areas:
 "header"
 "sidebar"
 "main";
+}
+
+
+
+.sidebar ul {
+  height: 300px;
+  row-gap: 10px;
+  justify-content: center;
+  flex-flow: column wrap;
+}
+
+.sidebar-wrap h3 {
+  text-align: right;
+}
+
+.sidebar ul li {
+  margin: 0 0;
+
 }
 
 .icons {
@@ -88,13 +167,6 @@ border-radius: 5%;
  margin: auto 0;
 }
 
-.project p {
-  color: black;
-  font-weight: normal;
-  font-size: 17px;
-  padding: 5px;
-
-}
 
 .project .title {
   font-size: 25px;
@@ -104,7 +176,7 @@ border-radius: 5%;
 .announcements {
   grid-area: anns;
   width: 80%;
-  height: 30vh;
+
  background-color:   #f2fbff;
  color: black;
  text-align: center;
@@ -113,23 +185,19 @@ box-shadow: 2px 2px 3px grey;
 
 }
 
-.announcements p.ann-title {
-  font-size: 10px;
-  font-weight: 700;
- 
-}
+
 
 .announcements p {
   color: black;
   font-weight: normal;
-  font-size: 14px;
+ 
   padding: 3px;
 }
 
 .trending {
   grid-area: trends;
-  width: 80%;
-  height: 30vh;
+ 
+  
   background-color:   #f2fbff;
   color: black;
   text-align: center;
@@ -164,6 +232,16 @@ box-shadow: 2px 2px 3px grey;
     
     }
 
+
+    .sidebar ul {
+      height: inherit;
+    }
+
+    .sidebar ul > li {
+      margin: 10vh 0;
+    
+    }
+
     .icons {
       margin: -2rem 0 -2rem;
     }
@@ -187,7 +265,7 @@ box-shadow: 2px 2px 3px grey;
       background-color: #bccbde;
       display: flex;
       flex-flow: column wrap;
-    height: 100rem;
+    height: 120rem;
       row-gap: 20px;
    
     
@@ -201,7 +279,7 @@ box-shadow: 2px 2px 3px grey;
     .project {
       box-shadow: -5px -5px 3px   #4b6eff;
       width: 17rem;
-      height: 42vh;
+      height: 40vh;
       
     }
     
@@ -217,13 +295,6 @@ box-shadow: 2px 2px 3px grey;
      margin: auto 0;
     }
     
-    .project p {
-      color: black;
-      font-weight: normal;
-      font-size: 17px;
-      padding: 5px;
-    
-    }
     
     .project .title {
       font-size: 25px;
@@ -232,7 +303,7 @@ box-shadow: 2px 2px 3px grey;
     
     .announcements {
       grid-area: anns;
-    width: 12rem;
+    width: 14rem;
      background-color:   #f2fbff;
      color: black;
      text-align: center;
@@ -241,40 +312,22 @@ box-shadow: 2px 2px 3px grey;
     
     }
     
-    .announcements p.ann-title {
-      font-size: 10px;
-      font-weight: 700;
-     
-    }
-    
-    .announcements p {
-      color: black;
-      font-weight: normal;
-      font-size: 14px;
-      padding: 3px;
-    }
     
     .trending {
       grid-area: trends;
-     width: 12rem;
+ width: 14rem;
       background-color:   #f2fbff;
       color: black;
       text-align: center;
     border-radius: 5%;
     box-shadow: 2px 2px 3px grey;
-    align-self: stretch;
+
     }
-    
-    .trending p {
-      color: black;
-      font-weight: normal;
-      font-size: 14px;
-      padding: 3px;
     
     
     }
     
-}
+
 
 @media (min-width: 700px) and (max-width: 1100px) {
   .container {
@@ -287,6 +340,17 @@ grid-template-areas:
 
 
 }
+
+
+.sidebar ul {
+  height: inherit;
+}
+
+.sidebar ul > li {
+  margin: 10vh 0;
+
+}
+
 .icons {
   margin: -2.6rem 0 -2rem;
 }
@@ -312,7 +376,7 @@ grid-template-areas:
   grid-area: main;
   background-color: #bccbde;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
 align-items: center;
   row-gap: 20px;
   
@@ -343,13 +407,6 @@ border-radius: 5%;
  margin: auto 0;
 }
 
-.project p {
-  color: black;
-  font-weight: normal;
-  font-size: 17px;
-  padding: 5px;
-
-}
 
 .project .title {
   font-size: 25px;
@@ -367,28 +424,23 @@ box-shadow: 2px 2px 3px grey;
 
 }
 
-.announcements p.ann-title {
-  font-size: 10px;
-  font-weight: 700;
- 
-}
 
 .announcements p {
   color: black;
   font-weight: normal;
-  font-size: 14px;
+ 
   padding: 3px;
 }
 
 .trending {
   grid-area: trends;
- width: 70%;
+
   background-color:   #f2fbff;
   color: black;
   text-align: center;
 border-radius: 5%;
 box-shadow: 2px 2px 3px grey;
-align-self: stretch;
+
 }
 
 .trending p {
@@ -405,13 +457,6 @@ align-self: stretch;
 
 
 
-.container div {
-  padding: 15px;
-  font-size: 32px;
-  font-family: Helvetica;
-  font-weight: bold;
-  color: white;
-}
 
 .header {
   background-color: #393f4d;
@@ -440,28 +485,18 @@ align-self: stretch;
 
 }
 
-.sidebar {
-  background-color:  #425bf8;
-  display: grid;
- grid-area: sidebar;
 
-}
 
 .sidebar ul {
   list-style: none;
   display: flex;
   flex-flow: column wrap;
-margin: 20vh 0 0;
+
+justify-content: flex-start;
 }
 
-.sidebar ul > li:first-child {
-  margin-bottom: 5vh;
-}
 
-.sidebar ul > li {
-  margin: 10px;
-height: 20px;
-}
+
 
 @media (min-width: 1400px) {
   .container {
@@ -474,6 +509,16 @@ height: 20px;
     
     
     }
+
+    .sidebar ul {
+      height: inherit;
+    }
+
+    .sidebar ul > li {
+      margin: 10vh 0;
+    
+    }
+
     .project .content img {
     
       height: 30vh;
@@ -507,8 +552,8 @@ height: 20px;
     
     .project {
       box-shadow: -5px -5px 3px  #4b6eff;
-      width: 20rem;
-      height: 50vh;
+      width: 18rem;
+      height: 41vh;
       
     }
     
@@ -524,13 +569,7 @@ height: 20px;
      margin: auto 0;
     }
     
-    .project p {
-      color: black;
-      font-weight: normal;
-      font-size: 25px;
-      padding: 5px;
-    
-    }
+
     
     .project .title {
       font-size: 30px;
@@ -548,16 +587,12 @@ height: 20px;
     
     }
     
-    .announcements p.ann-title {
-      font-size: 15px;
-      font-weight: 700;
-     
-    }
+
     
     .announcements p {
       color: black;
       font-weight: normal;
-      font-size: 14px;
+     
       padding: 3px;
     }
     
@@ -569,7 +604,7 @@ height: 20px;
       text-align: center;
     border-radius: 5%;
     box-shadow: 2px 2px 3px grey;
-    align-self: stretch;
+   
     }
     
     .trending p {
@@ -593,6 +628,17 @@ height: 20px;
     
     
     }
+
+
+    .sidebar ul {
+      height: inherit;
+    }
+
+    .sidebar ul > li {
+      margin: 10vh 0;
+    
+    }
+
     .project .content img {
     
       height: 27vh;
@@ -613,7 +659,7 @@ height: 20px;
       background-color: #bccbde;
       display: flex;
       flex-flow: column wrap;
-    height: 90rem;
+    height: 100rem;
       row-gap: 20px;
       justify-content:stretch;
     
@@ -643,13 +689,7 @@ height: 20px;
      margin: -2rem 0 0;
     }
     
-    .project p {
-      color: black;
-      font-weight: normal;
-      font-size: 20px;
-      padding: 5px;
-    
-    }
+
     
     .project .title {
       font-size: 32px;
@@ -667,16 +707,11 @@ height: 20px;
     
     }
     
-    .announcements p.ann-title {
-      font-size: 25px;
-      font-weight: 700;
-     
-    }
     
     .announcements p {
       color: black;
       font-weight: normal;
-      font-size: 20px;
+ 
       padding: 3px;
     }
     
@@ -688,7 +723,7 @@ height: 20px;
       text-align: center;
     border-radius: 5%;
     box-shadow: 2px 2px 3px grey;
-    align-self: stretch;
+ 
     }
     
     .trending p {
@@ -712,6 +747,17 @@ height: 20px;
       
       
       }
+
+
+    .sidebar ul {
+      height: inherit;
+    }
+
+    .sidebar ul > li {
+      margin: 10vh 0;
+    
+    }
+
       .project .content img {
     
         height: 26vh;
@@ -732,7 +778,7 @@ height: 20px;
         background-color: #bccbde;
         display: flex;
         flex-flow: column wrap;
-      height: 170rem;
+      height: 120rem;
         row-gap: 20px;
         justify-content:stretch;
       
@@ -745,7 +791,7 @@ height: 20px;
       
       .project {
         box-shadow: -5px -5px 3px   #4b6eff;
-        width: 32rem;
+        width: 25rem;
         height: 40vh;
         
       }
@@ -762,13 +808,6 @@ height: 20px;
        margin: 0 0;
       }
       
-      .project p {
-        color: black;
-        font-weight: normal;
-        font-size: 28px;
-        padding: 5px;
-      
-      }
       
       .project .title {
         font-size: 30px;
@@ -786,12 +825,7 @@ height: 20px;
       
       }
       
-      .announcements p.ann-title {
-        font-size: 25px;
-        font-weight: 700;
-       
-      }
-      
+ 
       .announcements p {
         color: black;
         font-weight: normal;
@@ -807,7 +841,7 @@ height: 20px;
         text-align: center;
       border-radius: 5%;
       box-shadow: 2px 2px 3px grey;
-      align-self: stretch;
+     
       }
       
       .trending p {
@@ -819,5 +853,3 @@ height: 20px;
       
       }
     }
-
-    
