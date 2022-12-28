@@ -27,65 +27,80 @@
   display: flex;
   justify-content: right;
   margin-top: -3vh;
+  margin-right: 70px;
+  align-items: center;
 
 }
 
-
+.menu > .search-box {
+  margin-top: -15px;
+  display: flex;
+  flex-flow: row nowrap;
+}
 
 .menu input[type=text] {
   padding: 6px;
-  margin-top: 8px;
+
   font-size: calc(15px + (25 - 15) * ((100vw - 350px) / (3000 - 350))); 
   width: 50vw;
   border: none;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.menu button {
-  float: right;
-  padding: 6px 10px;
-  margin-top: 6px;
+.menu button {             /*search box*/
+
+  padding: 4px 8px;
+  margin-top: 0;
   margin-right: 16px;
+  margin-left: 10px;
   background:  #f7f7f7;
-  font-size: calc(25px + (40 - 25) * ((100vw - 350px) / (3000 - 350))); 
+  font-size: calc(17px + (27 - 17) * ((100vw - 350px) / (3000 - 350))); 
   border: none;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 
 }
 
-.menu div span {
-  font-size: calc(25px + (40 - 25) * ((100vw - 350px) / (3000 - 350))); 
+
+
+.menu .header-icons span {
+  font-size: calc(35px + (50 - 35) * ((100vw - 350px) / (3000 - 350))); 
   color: white;
-  padding: 15px;
+  padding: 0px 15px 0;
 }
 
 .menu-lower {
   display: flex;
   margin-top: -5vh;
   justify-content: right;
+margin-right: 70px;
+
   align-items: center;
 }
 
-.menu-lower .logo {
-  margin-left: -15vw;
-}
 
-.menu-lower h3 {
-  font-family: odin-font;
-  margin-right: 10vw;
-  font-size: calc(20px + (30 - 20) * ((100vw - 350px) / (3000 - 350))); 
-  
-}
 .menu-lower .button {
-  width: 10vw;
-  font-size: 20px;
+  width: 8vw;
+  font-size: calc(14px + (22 - 14) * ((100vw - 350px) / (3000 - 350))); 
+  font-family: Helvetica;
+  font-weight: 600;
   height: 5vh;
+  margin-right: 12px;
   color: white;
+
   background-color: blue;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  border: none;
   border-radius: 12px;
 
-  
-
 }
+
+.menu-lower button:hover {
+  box-shadow:  0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
 .sidebar-wrap {
   background-color:  #425bf8;
  grid-area: sidebar;
@@ -107,7 +122,7 @@ p.title {
 }
 
 body p  {
-  color: black;
+  color:  #adadad;
   font-size: calc(14px + (22 - 14) * ((100vw - 350px) / (3000 - 350))); 
 }
 
@@ -117,19 +132,25 @@ body ul {
   font-size: calc(25px + (35 - 25) * ((100vw - 350px) / (3000 - 350))); 
 }
 
+.project {
+    box-shadow: 2px 2px 3px grey;
+}
+
 .content img {
   max-width: 100%;
 }
 
 .content p.title {
-  color:  #4b6eff;
+  color:  #adadad;
   text-shadow: 1px 1px 2px black;
-font-weight: 700;
+  margin: 1.5rem 0 1rem;
+font-weight: 600;
 }
 
 .icons span {
   color:   #ffa952;
   text-shadow: 1px 1px 1px black;
+  font-size: calc(25px + (35 - 25) * ((100vw - 350px) / (3000 - 350))); 
  padding: 5px;
 }
 
@@ -171,7 +192,7 @@ font-weight: 700;
   text-transform: uppercase;
 }
 
-@media only screen and (min-width: 350px){
+@media (min-width: 350px) {
   .container {
     display: grid;
 grid-template-columns: 1fr;
@@ -180,6 +201,7 @@ grid-template-areas:
 "sidebar"
 "main";
 }
+
 
 
 
@@ -226,7 +248,7 @@ grid-template-areas:
 
 
 .project {
-  box-shadow: -5px -5px 3px  #2e2e2e;
+ 
 width: 20rem;
 height: 25vh;
   
@@ -306,10 +328,24 @@ box-shadow: 2px 2px 3px grey;
     "sidebar header"
     "sidebar main"
     "sidebar main";
-    
-    
     }
 
+
+    .menu {
+      margin-right: 50px;
+    }
+    
+    .menu input[type=text] {
+      width: 35vw;
+    }
+    
+    
+    .menu-lower {
+
+    margin-right: 50px;
+ 
+    }
+    
 
     .sidebar ul {
       height: inherit;
@@ -351,7 +387,7 @@ box-shadow: 2px 2px 3px grey;
 
     
     .project {
-      box-shadow: -5px -5px 3px   #4b6eff;
+  
       width: 17rem;
       height: 40vh;
       
@@ -416,6 +452,58 @@ grid-template-areas:
 }
 
 
+.menu {
+  flex-flow: row;
+  justify-content: right;
+ margin-right: 0;
+
+}
+
+.menu input[type=text] {
+  display: flex;
+  width: 30vw;
+  font-size: calc(12px + (20 - 12) * ((100vw - 350px) / (3000 - 350))); 
+}
+
+.menu .search-box {
+margin-top: 0;
+}
+
+.menu button {             /*search box*/
+
+  padding: 4px 8px;
+  margin-top: 6px;
+  margin-right: 16px;
+  margin-left: 10px;
+  font-size: calc(14px + (22 - 14) * ((100vw - 350px) / (3000 - 350))); 
+
+}
+
+
+.menu .header-icons  {
+  font-size: calc(30px + (40 - 30) * ((100vw - 350px) / (3000 - 350))); 
+  color: white;
+  padding: 0px 10px 0;
+  margin-bottom: 22px;
+
+}
+
+.menu-lower {
+  margin-right: 0;
+}
+
+
+.menu-lower .button {
+  width: 8vw;
+  font-size: calc(12px + (20 - 12) * ((100vw - 350px) / (3000 - 350))); 
+  font-family: Helvetica;
+  font-weight: 600;
+  height: 4vh;
+  padding: 8px;
+
+}
+
+
 .sidebar ul {
   height: inherit;
 }
@@ -458,7 +546,7 @@ align-items: center;
 }
 
 .project {
-  box-shadow: -5px -5px 3px   #4b6eff;
+
   width: 25rem;
   height: 25vh;
   
@@ -495,7 +583,7 @@ box-shadow: 2px 2px 3px grey;
 
 
 .announcements p {
-  color: black;
+  color: #adadad;
   font-weight: normal;
  
   padding: 3px;
@@ -505,7 +593,7 @@ box-shadow: 2px 2px 3px grey;
   grid-area: trends;
 
   background-color:   #f2fbff;
-  color: black;
+  color: #adadad;
   text-align: center;
 border-radius: 5%;
 box-shadow: 2px 2px 3px grey;
@@ -551,8 +639,13 @@ justify-content: flex-start;
     "sidebar main"
     "sidebar main";
     
-    
     }
+
+    .menu input[type=text] {
+      width: 40vw;
+    }
+
+
 
     .sidebar ul {
       height: inherit;
@@ -591,7 +684,7 @@ justify-content: flex-start;
     
 
     .project {
-      box-shadow: -5px -5px 3px  #4b6eff;
+ 
       width: 18rem;
       height: 41vh;
       
@@ -620,7 +713,7 @@ justify-content: flex-start;
       grid-area: anns;
     width: 15rem;
      background-color:   #f2fbff;
-     color: black;
+     color: #adadad;
      text-align: center;
     border-radius: 5%;
     box-shadow: 2px 2px 3px grey;
@@ -699,7 +792,7 @@ justify-content: flex-start;
     
       display: flex;
       flex-flow: column wrap;
-    height: 100rem;
+    height: 130rem;
       row-gap: 20px;
       justify-content:stretch;
     
@@ -708,9 +801,9 @@ justify-content: flex-start;
 
     
     .project {
-      box-shadow: -5px -5px 3px   #4b6eff;
-      width: 24rem;
-      height: 40vh;
+ 
+      width: 26rem;
+      height: 42vh;
       
     }
     
@@ -723,7 +816,7 @@ justify-content: flex-start;
     }
     
     .project .content {
-     margin: -2rem 0 0;
+     margin: -1rem 0 0;
     }
     
 
