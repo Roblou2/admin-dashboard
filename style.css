@@ -5,6 +5,7 @@
   text-align: center;
   }
 
+
   .container {
     grid-template-rows: 25vh max-content auto;
   }
@@ -22,6 +23,7 @@
 .container div {
   padding: 22px 12px;
 }
+
 
 .menu {
   display: flex;
@@ -104,6 +106,8 @@ margin-right: 70px;
 .sidebar-wrap {
   background-color:  #425bf8;
  grid-area: sidebar;
+ 
+ box-shadow: 2px 2px 3px grey;
 
 }
 p.title {
@@ -129,7 +133,7 @@ body p  {
 body ul {
   color: white;
   font-weight: 700;
-  font-size: calc(25px + (35 - 25) * ((100vw - 350px) / (3000 - 350))); 
+  font-size: calc(22px + (32 - 22) * ((100vw - 350px) / (3000 - 350))); 
 }
 
 .project {
@@ -143,7 +147,7 @@ body ul {
 .content p.title {
   color:  #adadad;
   text-shadow: 1px 1px 2px black;
-  margin: 1.5rem 0 1rem;
+  margin: 1rem 0 1rem;
 font-weight: 600;
 }
 
@@ -155,7 +159,7 @@ font-weight: 600;
 }
 
 .icons {
-  margin: 0 0 1rem;
+  margin: 0 0 0.5rem;
   display: flex;
   justify-content: right;
 }
@@ -614,7 +618,7 @@ box-shadow: 2px 2px 3px grey;
 
 .header {
   background-color:  #1bf14c;
-
+  box-shadow: 2px 2px 3px grey;
  grid-area: header;
 }
 
@@ -673,7 +677,7 @@ justify-content: flex-start;
     
     #main-wrap {
       grid-area: main;
-
+      box-shadow: 2px 2px 3px grey;
       display: flex;
       flex-flow: column wrap;
     height: 117rem;
@@ -686,7 +690,7 @@ justify-content: flex-start;
     .project {
  
       width: 18rem;
-      height: 41vh;
+      height: 44vh;
       
     }
     
