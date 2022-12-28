@@ -5,6 +5,24 @@ let sideSpan = document.querySelectorAll(".sidebar ul li span")
 let listItems = document.querySelectorAll(".sidebar ul li")
 let x = window.matchMedia("(max-width: 700px)")
 
+let win = window
+
+let menuLower = document.querySelector(".menu-lower")
+
+function remove () {
+    if (x.matches) {
+        menuLower.classList.add('invisible')
+        dash.textContent = ""
+        side.classList.add('invisible');
+    }
+
+    else {
+        menuLower.classList.remove('invisible')
+        side.classList.remove('invisible');
+     
+    }
+}
+
 dash.addEventListener('click', myFunction)
 
 
@@ -27,3 +45,5 @@ dash.textContent = ""
   
 
   myFunction() 
+remove ()
+window.onresize = remove
