@@ -4,11 +4,14 @@
   text-align: center;
   }
 
+  body {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 5px;
+  }
 
   .container {
     display: grid;
-    margin: 0 auto;
-    padding: 0 5px;
     grid-template-rows: 25vh max-content auto;
   }
 
@@ -39,7 +42,7 @@ justify-content: flex-start;
 }
 
 .container div {
-  padding: 22px 12px;
+  padding: 18px 12px;
 }
 
 
@@ -843,7 +846,7 @@ margin-top: -2.5vh;
     .project {
  
       width: 26rem;
-      height: 42vh;
+      height: 44vh;
       
     }
     
