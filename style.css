@@ -158,6 +158,14 @@ body ul {
   font-size: calc(22px + (32 - 22) * ((100vw - 350px) / (3000 - 350))); 
 }
 
+#main-wrap {
+  display: flex;
+  flex-flow: column nowrap;
+  grid-area: main;
+align-items: center;
+
+}
+
 .project {
     box-shadow: 2px 2px 3px grey;
 }
@@ -228,6 +236,11 @@ font-size: calc(18px + (26 - 18) * ((100vw - 350px) / (3000 - 350)));
 }
 
 @media (min-width: 350px) {
+
+  .container div {
+    padding: 18px 5px;
+  }
+
   .container {
 grid-template-columns: 1fr;
 grid-template-areas: 
