@@ -238,7 +238,7 @@ font-size: calc(18px + (26 - 18) * ((100vw - 350px) / (3000 - 350)));
 @media (min-width: 350px) {
 
   .container div {
-    padding: 18px 0;
+    padding: 18px 2px;
   }
 
   .container {
