@@ -196,7 +196,7 @@ font-size: calc(18px + (26 - 18) * ((100vw - 350px) / (3000 - 350)));
 
   border-bottom: 1px solid  #d4d4d4;
 
-};
+}
 
 .announcements h3.ann-head {
   color: black;
