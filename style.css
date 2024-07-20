@@ -219,7 +219,7 @@ font-size: 1.2rem;
 
 .anns-wrapper p.ann-title {
   color: black;
-  font-size: 1.2rem;
+  font-size: 1rem;
   margin-bottom: 8px;
   text-transform: uppercase;
 
@@ -227,7 +227,7 @@ font-size: 1.2rem;
 
 .trends-wrap p.trend-title {
   color: black;
-  font-size: 25px;
+  font-size: 1rem;
   margin-bottom: 8px;
   text-transform: uppercase;
 }
