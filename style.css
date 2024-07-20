@@ -180,7 +180,7 @@ align-items: center;
   text-shadow: 1px 1px 2px black;
   margin: 1rem 0 1rem;
 font-weight: 600;
-font-size: calc(18px + (26 - 18) * ((100vw - 350px) / (3000 - 350))); 
+font-size: 1.2rem; 
 }
 .content p.title span {
   padding: 0 5px;
@@ -399,7 +399,7 @@ grid-template-areas:
 .menu input[type=text] {
   display: flex;
   width: 30vw;
-  font-size: calc(12px + (20 - 12) * ((100vw - 350px) / (3000 - 350))); 
+  font-size: 1.2rem; 
 }
 
 .menu .search-box {
@@ -434,7 +434,7 @@ margin-top: 0;
 
 .menu-lower .button {
   width: 8vw;
-  font-size: calc(12px + (20 - 12) * ((100vw - 350px) / (3000 - 350))); 
+  font-size: 1rem; 
   font-family: Helvetica;
   font-weight: 600;
   height: 4vh;
@@ -563,7 +563,7 @@ box-shadow: 2px 2px 3px grey;
       margin-right: 50px;
         flex-flow: row nowrap;
         justify-content: right;
-      
+        align-items: flex-start;
     }
     
     .menu input[type=text] {
@@ -685,6 +685,7 @@ box-shadow: 2px 2px 3px grey;
 
     .menu {
       flex-flow: row nowrap;
+      align-items: flex-start;
     }
 
     .menu input[type=text] {
