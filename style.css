@@ -33,7 +33,7 @@ justify-content: flex-start;
   
   .main-title h3 {
     color: black;
-    font-size: 25px;
+    font-size: 1.2rem;
     text-transform: uppercase;
   }
 
@@ -59,12 +59,13 @@ justify-content: flex-start;
   margin-top: -15px;
   display: flex;
   flex-flow: row nowrap;
+
 }
 
 .menu input[type=text] {
   padding: 6px;
 
-  font-size: calc(15px + (25 - 15) * ((100vw - 350px) / (3000 - 350))); 
+  font-size: 1rem; 
   width: 50vw;
   border: none;
   border-radius: 10px;
@@ -105,7 +106,7 @@ margin-right: 70px;
 
 .menu-lower .button {
   width: 8vw;
-  font-size: calc(14px + (22 - 14) * ((100vw - 350px) / (3000 - 350))); 
+  font-size: 1rem; 
   font-family: Helvetica;
   font-weight: 600;
   height: 5vh;
@@ -136,7 +137,7 @@ p.title {
 }
 
 .sidebar-wrap h3 {
-  font-size: 30px;
+  font-size: 1.5rem;
   color: white;
   text-transform: uppercase;
 }
@@ -155,7 +156,7 @@ body p  {
 body ul {
   color: white;
   font-weight: 700;
-  font-size: calc(22px + (32 - 22) * ((100vw - 350px) / (3000 - 350))); 
+  font-size: 1rem; 
 }
 
 #main-wrap {
@@ -218,7 +219,7 @@ font-size: calc(18px + (26 - 18) * ((100vw - 350px) / (3000 - 350)));
 
 .anns-wrapper p.ann-title {
   color: black;
-  font-size: 25px;
+  font-size: 1.2rem;
   margin-bottom: 8px;
   text-transform: uppercase;
 
@@ -269,6 +270,7 @@ grid-template-areas:
 
 .sidebar-wrap h3 {
   text-align: right;
+  padding: 0 20px;
 }
 
 .sidebar ul li {
@@ -402,6 +404,7 @@ grid-template-areas:
 
 .menu .search-box {
 margin-top: 0;
+
 }
 
 .menu button {             /*search box*/
