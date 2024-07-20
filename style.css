@@ -148,7 +148,7 @@ p.title {
 }
 
 body p  {
-  color:  #adadad;
+  color: black;
   font-size: calc(14px + (22 - 14) * ((100vw - 350px) / (3000 - 350))); 
   font-family: 'Roboto', sans-serif;
 }
@@ -176,7 +176,7 @@ align-items: center;
 }
 
 .content p.title {
-  color:  #adadad;
+  color: black;
   text-shadow: 1px 1px 2px black;
   margin: 1rem 0 1rem;
 font-weight: 600;
@@ -184,7 +184,7 @@ font-size: 1.2rem;
 }
 .content p.title span {
   padding: 0 5px;
-  color:  #646464;
+  color: black;
 }
 .icons span {
   color:   #ffa952;
@@ -292,7 +292,9 @@ grid-template-areas:
   display: grid;
   grid-template-columns:  1fr;
   grid-template-rows: repeat(3, 1fr);
- gap: 30px;
+ gap: 3rem;
+ justify-items: center;
+
 
 }
 #main-wrap {
@@ -302,7 +304,20 @@ grid-template-areas:
 align-items: center;
 
 }
+.profile {
+  box-shadow: 2px 2px 3px grey;
+width: 20rem;
 
+  background-color: #f2fbff;
+  color: black;
+  text-align: center;
+border-radius: 5%;
+}
+
+.profile-content {
+  width: 80%;
+  margin: auto;
+}
 
 .project {
  
@@ -464,7 +479,7 @@ margin-top: 0;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(3, 1fr);
- gap: 30px;
+ gap: 3rem;
 
 
 }
@@ -478,6 +493,21 @@ align-items: center;
   row-gap: 20px;
   
 
+}
+
+.profile {
+  box-shadow: 2px 2px 3px grey;
+  height: 44vh;
+  width: 53rem;
+  background-color: #f2fbff;
+  color: black;
+  text-align: center;
+border-radius: 5%;
+}
+
+.profile-content {
+  width: 80%;
+  margin: auto;
 }
 
 .project {
@@ -602,7 +632,7 @@ box-shadow: 2px 2px 3px grey;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(3, 1fr);
-     gap: 30px;
+     gap: 3rem;
     
     
     }
@@ -617,7 +647,21 @@ box-shadow: 2px 2px 3px grey;
     
     }
     
+    .profile {
+      box-shadow: 2px 2px 3px grey;
+      height: 44vh;
+      width: 50rem;
+      background-color: #f2fbff;
+      color: black;
+      text-align: center;
+    border-radius: 5%;
+    }
 
+    .profile-content {
+      width: 80%;
+      margin: auto;
+    }
+    
     
     .project {
   
@@ -716,7 +760,7 @@ box-shadow: 2px 2px 3px grey;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(3, 1fr);
-     gap: 30px;
+     gap: 3rem;
     
     
     }
@@ -732,6 +776,22 @@ box-shadow: 2px 2px 3px grey;
     
     }
     
+    .profile {
+      box-shadow: 2px 2px 3px grey;
+      height: 44vh;
+      width: 50rem;
+      background-color: #f2fbff;
+      color: black;
+      text-align: center;
+    border-radius: 5%;
+    }
+    
+    .profile-content {
+ 
+        width: 80%;
+        margin: auto;
+      
+    }
 
     .project {
  
@@ -842,7 +902,7 @@ box-shadow: 2px 2px 3px grey;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(3, 1fr);
-     gap: 50px;
+     gap: 4rem;
     
     
     }
@@ -852,13 +912,27 @@ box-shadow: 2px 2px 3px grey;
       box-shadow: 2px 2px 3px grey;
       display: flex;
       flex-flow: column wrap;
-    height: 105rem;
+    height: 150rem;
       row-gap: 20px;
       justify-content:stretch;
     
     }
     
 
+    .profile {
+      box-shadow: 2px 2px 3px grey;
+      height: auto;
+      width: 60rem;
+      background-color: #f2fbff;
+      color: black;
+      text-align: center;
+    border-radius: 5%;
+    }
+
+    .profile-content {
+    width: 80%;
+    margin: auto;
+    }
     
     .project {
  
@@ -961,7 +1035,7 @@ box-shadow: 2px 2px 3px grey;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
-       gap: 60px;
+       gap: 5rem;
       
       
       }
@@ -971,10 +1045,25 @@ box-shadow: 2px 2px 3px grey;
     
         display: flex;
         flex-flow: column wrap;
-      height: 126rem;
+      height: 166rem;
         row-gap: 20px;
         justify-content:stretch;
       
+      }
+
+      .profile {
+        box-shadow: -5px -5px 3px grey;
+    width: 61rem;
+        height: 44vh;
+        background-color: #f2fbff;
+        color: black;
+        text-align: center;
+      border-radius: 5%;
+      }
+
+      .profile-content {
+        width: 80%;
+        margin: auto;
       }
       
       .project {
@@ -982,6 +1071,13 @@ box-shadow: 2px 2px 3px grey;
         width: 28rem;
         height: 44vh;
         
+      }
+      .profile h2 {
+        text-align: center;
+      }
+
+      .profile-content p {
+        color: black;
       }
       
       .main .project {
