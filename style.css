@@ -889,7 +889,7 @@ box-shadow: 2px 2px 3px grey;
 
     .project .content img {
     
-      height: 27vh;
+      height: 8rem;
     }
     
     .main {
@@ -918,7 +918,7 @@ box-shadow: 2px 2px 3px grey;
     .profile {
       box-shadow: 2px 2px 3px grey;
       height: auto;
-    width: 54rem;
+    width: 45rem;
       background-color: #f2fbff;
       color: black;
       text-align: center;
@@ -933,8 +933,8 @@ box-shadow: 2px 2px 3px grey;
     
     .project {
  
-      width: 24rem;
-      height: 24rem;
+      width: 20rem;
+      height: 20rem;
       
     }
     
