@@ -18,6 +18,10 @@
 
 .header {
   background-color:  #1bf14c;
+  display: flex;
+  flex-flow: column;
+
+justify-content: space-around;
   box-shadow: 2px 2px 3px grey;
  grid-area: header;
 }
@@ -41,18 +45,15 @@ justify-content: flex-start;
   background-color:  #fafafa;
 }
 
-.container div {
-  padding: 18px 12px;
-}
-
 
 .menu {
   display: flex;
   justify-content: right;
+  align-items: start;
 }
 
 .menu > .search-box {
-  margin-top: -15px;
+
   display: flex;
   flex-flow: row nowrap;
 
@@ -234,9 +235,6 @@ font-size: 1.2rem;
 
 @media (min-width: 350px) {
 
-  .container div {
-    padding: 18px 2px;
-  }
 
   .container {
 grid-template-columns: 1fr;
@@ -249,6 +247,9 @@ grid-template-areas:
 
 .header-icons {
   display: flex;
+  flex-flow: row;
+  align-items: start;
+  
 }
 
 .menu {
@@ -402,7 +403,7 @@ grid-template-areas:
 
 .menu {
   flex-flow: row nowrap;
- align-items: center;
+ align-items: start;
  margin-right: 0;
 
 }
@@ -589,7 +590,7 @@ box-shadow: 2px 2px 3px grey;
       margin-right: 50px;
         flex-flow: row nowrap;
       
-        align-items: center
+        align-items: start;
     }
     
     .menu input[type=text] {
@@ -870,7 +871,7 @@ box-shadow: 2px 2px 3px grey;
 
 .menu {
   flex-flow: row nowrap;
-  align-items: center;
+  align-items: start;
 
 }
 
@@ -1007,6 +1008,7 @@ box-shadow: 2px 2px 3px grey;
 
       .menu {
         flex-flow: row nowrap;
+        align-items: start;
       }
 
     .sidebar ul {
