@@ -750,7 +750,7 @@ box-shadow: 2px 2px 3px grey;
 
     .project .content img {
     
-      height: 30vh;
+      height: 8rem;
     }
     
     .main {
@@ -777,7 +777,7 @@ box-shadow: 2px 2px 3px grey;
     .profile {
       box-shadow: 2px 2px 3px grey;
       height: auto;
-      width: 50rem;
+      width: 39rem;
       background-color: #f2fbff;
       color: black;
       text-align: center;
@@ -794,8 +794,8 @@ box-shadow: 2px 2px 3px grey;
 
     .project {
  
-      width: 22rem;
-      height: 22rem;
+      width: 18rem;
+      height: 18rem;
       
     }
     
@@ -1051,7 +1051,7 @@ box-shadow: 2px 2px 3px grey;
 
       .profile {
         box-shadow: -5px -5px 3px grey;
-    width: 61rem;
+    width: 56rem;
         height: 44vh;
         background-color: #f2fbff;
         color: black;
@@ -1067,7 +1067,7 @@ box-shadow: 2px 2px 3px grey;
       .project {
         box-shadow: -5px -5px 3px   #4b6eff;
         width: 28rem;
-        height: 44vh;
+        height: 28rem;
         
       }
       .profile h2 {
