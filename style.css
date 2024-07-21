@@ -407,7 +407,7 @@ grid-template-areas:
 
 .menu {
   flex-flow: row nowrap;
- align-items: start;
+ align-items: center;
  margin-right: 0;
  justify-content:end
 }
@@ -595,7 +595,7 @@ box-shadow: 2px 2px 3px grey;
       margin-right: 50px;
         flex-flow: row nowrap;
         align-items: center;
-        justify-content:end
+        justify-content:end;
     }
     
     .menu input[type=text] {
