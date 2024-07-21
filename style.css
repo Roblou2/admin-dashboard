@@ -96,7 +96,7 @@ justify-content: flex-start;
 
 .menu-lower {
   display: flex;
-  margin-top: -8vh;
+  margin-top: -5rem;
   justify-content: right;
 margin-right: 70px;
 
@@ -307,7 +307,7 @@ align-items: center;
 .profile {
   box-shadow: 2px 2px 3px grey;
 width: 20rem;
-
+height: auto;
   background-color: #f2fbff;
   color: black;
   text-align: center;
@@ -406,7 +406,7 @@ grid-template-areas:
 
 .menu {
   flex-flow: row nowrap;
-  justify-content: right;
+ align-items: center;
  margin-right: 0;
 
 }
@@ -443,7 +443,7 @@ margin-top: 0;
 
 .menu-lower {
   margin-right: 0;
-  margin-top: -6vh;
+  margin-top: -3rem;
 }
 
 
@@ -497,8 +497,8 @@ align-items: center;
 
 .profile {
   box-shadow: 2px 2px 3px grey;
-  height: 44vh;
-  width: 53rem;
+  height: auto;
+  width: 28rem;
   background-color: #f2fbff;
   color: black;
   text-align: center;
@@ -592,8 +592,8 @@ box-shadow: 2px 2px 3px grey;
     .menu {
       margin-right: 50px;
         flex-flow: row nowrap;
-        justify-content: right;
-        align-items: flex-start;
+      
+        align-items: center
     }
     
     .menu input[type=text] {
@@ -605,7 +605,7 @@ box-shadow: 2px 2px 3px grey;
 
     margin-right: 50px;
 
-      margin-top: -6vh;
+      margin-top: -3.5rem;
     
     }
     
@@ -649,7 +649,7 @@ box-shadow: 2px 2px 3px grey;
     
     .profile {
       box-shadow: 2px 2px 3px grey;
-      height: 44vh;
+      height: auto;
       width: 50rem;
       background-color: #f2fbff;
       color: black;
@@ -729,7 +729,8 @@ box-shadow: 2px 2px 3px grey;
 
     .menu {
       flex-flow: row nowrap;
-      align-items: flex-start;
+      align-items: center;
+      
     }
 
     .menu input[type=text] {
@@ -737,7 +738,7 @@ box-shadow: 2px 2px 3px grey;
     }
 
     .menu-lower {
-      margin-top: -6vh;
+      margin-top: -4rem;
     }
 
 
@@ -778,7 +779,7 @@ box-shadow: 2px 2px 3px grey;
     
     .profile {
       box-shadow: 2px 2px 3px grey;
-      height: 44vh;
+      height: auto;
       width: 50rem;
       background-color: #f2fbff;
       color: black;
@@ -873,13 +874,9 @@ box-shadow: 2px 2px 3px grey;
 
 .menu {
   flex-flow: row nowrap;
-  align-items: flex-start;
-}
-
-.menu .header-icons span {
+  align-items: center;
 
 }
-
 
 
 
