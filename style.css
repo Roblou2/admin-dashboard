@@ -39,6 +39,7 @@ justify-content: flex-start;
     color: black;
     font-size: 1.2rem;
     text-transform: uppercase;
+    padding-top: 3rem;
   }
 
 #main-wrap {
@@ -299,7 +300,7 @@ grid-template-areas:
   flex-flow: column nowrap;
   grid-area: main;
 align-items: center;
-
+padding: 2rem 0;
 }
 .profile {
   box-shadow: 2px 2px 3px grey;
@@ -908,7 +909,7 @@ box-shadow: 2px 2px 3px grey;
       flex-flow: column wrap;
     height: 140rem;
       row-gap: 5rem;
-  padding-top: 3rem;
+      padding: 2rem 0;
       justify-content:first baseline;
     
     }
