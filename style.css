@@ -49,10 +49,6 @@ justify-content: flex-start;
 .menu {
   display: flex;
   justify-content: right;
-  margin-top: -3vh;
-  margin-right: 70px;
-  align-items: center;
-
 }
 
 .menu > .search-box {
@@ -89,14 +85,14 @@ justify-content: flex-start;
 
 
 .menu .header-icons span {
-  font-size: calc(35px + (50 - 35) * ((100vw - 350px) / (3000 - 350))); 
+  font-size: 2.5rem; 
   color: white;
-  padding: 0px 15px 0;
+  padding: 0px 15px 0px;
 }
 
 .menu-lower {
   display: flex;
-  margin-top: -5rem;
+  margin-top: -3rem;
   justify-content: right;
 margin-right: 70px;
 
@@ -434,16 +430,16 @@ margin-top: 0;
 
 
 .menu .header-icons  {
-  font-size: calc(30px + (40 - 30) * ((100vw - 350px) / (3000 - 350))); 
+  font-size: 2rem; 
   color: white;
-  padding: 0px 10px 0;
+  padding: 0px 10px 0px;
 
 
 }
 
 .menu-lower {
   margin-right: 0;
-  margin-top: -3rem;
+  margin-top: -2rem;
 }
 
 
@@ -605,7 +601,7 @@ box-shadow: 2px 2px 3px grey;
 
     margin-right: 50px;
 
-      margin-top: -3.5rem;
+      margin-top: -3rem;
     
     }
     
@@ -729,7 +725,7 @@ box-shadow: 2px 2px 3px grey;
 
     .menu {
       flex-flow: row nowrap;
-      align-items: center;
+      align-items: start;
       
     }
 
@@ -738,7 +734,7 @@ box-shadow: 2px 2px 3px grey;
     }
 
     .menu-lower {
-      margin-top: -4rem;
+      margin-top: -3rem;
     }
 
 
