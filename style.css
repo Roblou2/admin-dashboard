@@ -12,7 +12,7 @@
 
   .container {
     display: grid;
-    grid-template-rows: 25vh max-content auto;
+    grid-template-rows: 12rem max-content auto;
   }
 
 
@@ -21,7 +21,7 @@
   display: flex;
   flex-flow: column;
 
-justify-content: space-around;
+justify-content: space-evenly;
   box-shadow: 2px 2px 3px grey;
  grid-area: header;
 }
@@ -93,7 +93,7 @@ justify-content: flex-start;
 
 .menu-lower {
   display: flex;
-  margin-top: -3rem;
+
   justify-content: right;
 margin-right: 70px;
 
@@ -440,7 +440,7 @@ margin-top: 0;
 
 .menu-lower {
   margin-right: 0;
-  margin-top: -2rem;
+
 }
 
 
@@ -602,7 +602,6 @@ box-shadow: 2px 2px 3px grey;
 
     margin-right: 50px;
 
-      margin-top: -3rem;
     
     }
     
@@ -734,11 +733,7 @@ box-shadow: 2px 2px 3px grey;
       width: 40vw;
     }
 
-    .menu-lower {
-      margin-top: -3rem;
-    }
-
-
+  
     .sidebar ul {
       height: inherit;
     }
