@@ -731,8 +731,8 @@ box-shadow: 2px 2px 3px grey;
 
     .menu {
       flex-flow: row nowrap;
-      align-items: start;
-      
+      align-items: center;
+      justify-content:end
     }
 
     .menu input[type=text] {
@@ -873,7 +873,8 @@ box-shadow: 2px 2px 3px grey;
 
 .menu {
   flex-flow: row nowrap;
-  align-items: start;
+  align-items: center;
+  justify-content:end
 
 }
 
@@ -1013,6 +1014,7 @@ box-shadow: 2px 2px 3px grey;
       .menu {
         flex-flow: row nowrap;
         align-items: start;
+        justify-content:end
       }
 
     .sidebar ul {
