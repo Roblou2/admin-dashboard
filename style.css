@@ -249,14 +249,15 @@ grid-template-areas:
 .header-icons {
   display: flex;
   flex-flow: row;
-  align-items: start;
-  
+padding: 1rem 0;
+
 }
 
 .menu {
   flex-flow: column nowrap;
   margin: 0;
   align-items: last baseline;
+  justify-content: space-around;
 }
 
 .sidebar ul {
